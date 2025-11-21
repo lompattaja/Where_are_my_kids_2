@@ -4,48 +4,50 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Game Layout Template</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pelisivu.css">
 </head>
 <body>
   <header>
-    <h1>My Game — Prototype</h1>
+    <h1>PLAYER NAME: (user) </h1>
     <nav style="margin-left:auto; color:var(--muted); font-size:0.9rem">
-      <span>Profile</span> • <span>Settings</span>
+      <span>TIME LEFT: [...] </span> <span>MOVES LEFT: [...]</span>
     </nav>
   </header>
 
+      <div class="top-controls">
+      <button type="button">Start</button>
+      <button type="button">Pause</button>
+    </div>
+
   <main>
-    <section id="map" class="card" aria-label="Game map area">
-      <div style="text-align:center;">
-        <strong>Map area</strong>
-        <div style="font-size:0.85rem;color:var(--muted); margin-top:8px">
-          Insert your canvas or game target element with id="game-canvas" here.
-        </div>
+    <section id="map" class="card">
+      <strong>MAP</strong>
+      <div style="font-size:0.85rem;color:var(--muted); margin-top:8px">
+        KARTTA / PELIKENTTÄ. id="game-canvas"
       </div>
     </section>
 
     <aside class="sidebar">
-      <section id="panel-top" class="panel" aria-label="Top controls and info">
-        <h2>Controls / Tools</h2>
-        <p>Put buttons, toggles, inventory, or tools here.</p>
-        <div style="margin-top:auto; display:flex; gap:8px;">
-          <button type="button">Start</button>
-          <button type="button">Pause</button>
-        </div>
+      <section id="panel-top" class="panel">
+        <h2>GAME STATE:</h2>
+        <p>TODO LIST / FEATURES</p>
       </section>
 
-      <section id="panel-bottom" class="panel" aria-label="Lower info and logs">
-        <h2>Info / Logs</h2>
-        <p>Score, messages, or debug log can go here.</p>
-        <div style="flex:1; overflow:auto; margin-top:8px; color:var(--muted); font-size:0.85rem">
-          <small>Event log...</small>
-        </div>
+      <section id="panel-bottom" class="panel">
+        <h2>INFO & HINTS</h2>
+        <p>Hints appear here</p>
       </section>
     </aside>
+
   </main>
 
+    <section class="input-area">
+    <input type="text" id="player-input" placeholder="Enter your answer…" />
+    <button id="submit-input">Enter</button>
+  </section>
+
   <footer>
-    © <span id="year"></span> Your Name — Build whatever you want
+    <span id="footer"></span>
   </footer>
 
   <script>
