@@ -3,39 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Game Layout Template</title>
+  <title>Flight game</title>
   <link rel="stylesheet" href="pelisivu.css">
 </head>
+
 <body>
+
   <header>
-    <h1>PLAYER NAME: (user) </h1>
-    <nav style="margin-left:auto; color:var(--muted); font-size:0.9rem">
-      <span>TIME LEFT: [...] </span> <span>MOVES LEFT: [...]</span>
-    </nav>
+    <h1>PLAYER NAME: (name) </h1>
   </header>
 
-      <div class="top-controls">
-      <button type="button">Start</button>
-      <button type="button">Pause</button>
-    </div>
+<div class="button-top-right">
+  <button>BUTTON</button>
+  <p>(...)</p>
+</div>
 
   <main>
+
     <section id="map" class="card">
-      <strong>MAP</strong>
-      <div style="font-size:0.85rem;color:var(--muted); margin-top:8px">
-        KARTTA / PELIKENTTÄ. id="game-canvas"
-      </div>
+      <strong>PELIKARTTA (MAP) </strong>
     </section>
 
     <aside class="sidebar">
       <section id="panel-top" class="panel">
-        <h2>GAME STATE:</h2>
-        <p>TODO LIST / FEATURES</p>
+        <h2>PELIN STATUS:</h2>
+        <p>TIME: [...]</p>
+        <p>MOVES LEFT: [...]</p>
+        <p>DISTANCE TRAVELLED: [...]</p>
       </section>
 
       <section id="panel-bottom" class="panel">
         <h2>INFO & HINTS</h2>
-        <p>Hints appear here</p>
+        <p>(Maiden liput)</p>
       </section>
     </aside>
 
@@ -47,7 +46,6 @@
   </section>
 
   <footer>
-    <span id="footer"></span>
   </footer>
 
   <script>
